@@ -10,7 +10,7 @@ server.get('/', async (request, reply) => {
     return reply.send(`Hello World! ${process.env.PORT}`);
 })
 
-server.listen({ port: 8080 }, (err, address) => {
+server.listen({ port: 5005 }, (err, address) => {
     if (err) {
         console.error(err)
         process.exit(1)
