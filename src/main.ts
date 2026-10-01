@@ -10,6 +10,10 @@ server.get('/', async (request, reply) => {
     return reply.send(`Hello World! ${process.env.PORT}`);
 })
 
+server.get('/health', async (request, reply) => {
+    return reply.send(`Hello World ! ${process.env.PORT}`);
+});
+
 try {
     // Read the port from environment variables, fallback to 3000
     const port = Number(process.env.PORT) || 3000;
